@@ -24,7 +24,7 @@ build: mvn package
 # List of files that are included in the generated image.
 #
 files:
-  /capstan-example-java.jar: target/capstan-example-java-1.0-SNAPSHOT-jar-with-dependencies.jar
+  /capstan-env-var-java-example.jar: target/capstan-env-var-java-example-1.0-SNAPSHOT-jar-with-dependencies.jar
   /javamains: javamains
   /usr/mgmt/local-init.yaml: local-init.yaml
   /init/00-cmdline: cmdline

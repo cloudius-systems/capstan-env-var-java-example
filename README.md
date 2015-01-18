@@ -22,22 +22,22 @@ capstan run
   **my_var**, and call (using include) the remote init file
 
 * remote-init.yaml - an example of a cloud-init file, setting an env
-  var cloud_var
+  var **cloud_var**
 
 * src/main/java/io/osv/Main.java - a trivial Java program which use
   both env vars
 
-* cmdline - a OSv init file which call the local init file
+* cmdline - osv init file which call the local init file
 
-* Capstan file to upload all of the above to the image
+* Capstanfile which upload all of the above files to the image
 
 To test the remote-init file locally, you will need to run
 [ec2-simulator](https://github.com/cloudius-systems/osv/blob/master/scripts/ec2-simulator.py)
 from the osv source code:
 ```
-sudo ./ec2-simulator.py -f ~/projects/capstan-example-java/remote-init.yaml
+sudo ./scripts/ec2-simulator.py -f ~/projects/capstan-example-java/remote-init.yaml
 ```
 The simulator position the remote-init.yaml in the standard meta-data
-IP, as EC2 does.
+IP, 169.254.169.254, as EC2 does.
 
 

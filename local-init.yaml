@@ -1,0 +1,5 @@
+run:
+    - POST: /env/my_var
+      val: myval
+include: 
+    - load-from-cloud

@@ -1,0 +1,1 @@
+/usr/mgmt/cloud-init.so --force-probe --file /usr/mgmt/local-init.yaml;

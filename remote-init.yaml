@@ -1,0 +1,3 @@
+run:
+    - POST: /env/cloud_var
+      val: yourval
